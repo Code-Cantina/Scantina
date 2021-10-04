@@ -16,6 +16,8 @@
 		42D7694A270A9B60001E6ECE /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D76949270A9B60001E6ECE /* Extension+UIImage.swift */; };
 		42D7694C270A9B87001E6ECE /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7694B270A9B87001E6ECE /* Extension+UIViewController.swift */; };
 		42D7694E270A9DD3001E6ECE /* ScanAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7694D270A9DD3001E6ECE /* ScanAlertVC.swift */; };
+		42D76951270AABE8001E6ECE /* ScantinaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D76950270AABE8001E6ECE /* ScantinaButton.swift */; };
+		42D76953270ABE23001E6ECE /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 42D76952270ABE23001E6ECE /* Readme.md */; };
 		42E4821F2709797A008DB38C /* CantinaScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E4821E2709797A008DB38C /* CantinaScanner.swift */; };
 		DFC3C3FAF26512BBB8C2EDD9 /* libPods-Scantina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E89AD7409C296DEF12597A /* libPods-Scantina.a */; };
 /* End PBXBuildFile section */
@@ -32,6 +34,8 @@
 		42D76949270A9B60001E6ECE /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
 		42D7694B270A9B87001E6ECE /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
 		42D7694D270A9DD3001E6ECE /* ScanAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanAlertVC.swift; sourceTree = "<group>"; };
+		42D76950270AABE8001E6ECE /* ScantinaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScantinaButton.swift; sourceTree = "<group>"; };
+		42D76952270ABE23001E6ECE /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		42E4821E2709797A008DB38C /* CantinaScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CantinaScanner.swift; sourceTree = "<group>"; };
 		A4E89AD7409C296DEF12597A /* libPods-Scantina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Scantina.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BADA27D8FF69AC6CB1117E24 /* Pods-Scantina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scantina.release.xcconfig"; path = "Target Support Files/Pods-Scantina/Pods-Scantina.release.xcconfig"; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 		4291080327016F5E00491DD5 = {
 			isa = PBXGroup;
 			children = (
+				42D76952270ABE23001E6ECE /* Readme.md */,
 				4291080E27016F5E00491DD5 /* Scantina */,
 				4291080D27016F5E00491DD5 /* Products */,
 				8FD9C4561B74503ECE24F23B /* Pods */,
@@ -74,6 +79,7 @@
 				42D76948270A9B11001E6ECE /* Extensions */,
 				42E4821D27097963008DB38C /* Utilities */,
 				429108242701701D00491DD5 /* ViewControllers */,
+				42D7694F270AABC5001E6ECE /* CustomControls */,
 				429108232701700500491DD5 /* Support */,
 				4291081D27016F6000491DD5 /* Info.plist */,
 			);
@@ -107,6 +113,14 @@
 				42D7694B270A9B87001E6ECE /* Extension+UIViewController.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		42D7694F270AABC5001E6ECE /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				42D76950270AABE8001E6ECE /* ScantinaButton.swift */,
+			);
+			path = CustomControls;
 			sourceTree = "<group>";
 		};
 		42E4821D27097963008DB38C /* Utilities */ = {
@@ -196,6 +210,7 @@
 			files = (
 				4291081C27016F6000491DD5 /* LaunchScreen.storyboard in Resources */,
 				4291081927016F6000491DD5 /* Assets.xcassets in Resources */,
+				42D76953270ABE23001E6ECE /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +248,7 @@
 			files = (
 				42910826270170DA00491DD5 /* ScannerVC.swift in Sources */,
 				42D7694C270A9B87001E6ECE /* Extension+UIViewController.swift in Sources */,
+				42D76951270AABE8001E6ECE /* ScantinaButton.swift in Sources */,
 				42D7694E270A9DD3001E6ECE /* ScanAlertVC.swift in Sources */,
 				4291081027016F5E00491DD5 /* AppDelegate.swift in Sources */,
 				42D76947270A8F2D001E6ECE /* ThemeSettings.swift in Sources */,

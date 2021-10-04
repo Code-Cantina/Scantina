@@ -17,4 +17,6 @@ enum ThemeImages {
 
 extension UIColor {
     static let primaryColor = UIColor(named: "primeColor")
+    static let secondaryColor = UIColor(named: "trimColor")
+    static let buttonColor = UIColor(named: "buttonColor")
 }

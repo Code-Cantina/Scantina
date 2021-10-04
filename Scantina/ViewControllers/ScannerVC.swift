@@ -58,7 +58,7 @@ class ScannerVC: UIViewController {
         lbl.text = "Scantina"
         lbl.font = .boldSystemFont(ofSize: 24)
         lbl.textAlignment = .center
-        lbl.textColor = .label
+        lbl.textColor = UIColor.secondaryColor
         return lbl
     }()
     
@@ -87,7 +87,7 @@ class ScannerVC: UIViewController {
     }()
     
     private let lightBulbOverlay: UIImageView = {
-        let iv = UIImageView(image: UIImage(systemName: "light.max")?.maskWithColor(color: UIColor.primaryColor!))
+        let iv = UIImageView(image: UIImage(systemName: "light.max")?.maskWithColor(color: UIColor.systemYellow))
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.contentMode = .scaleAspectFit
         return iv
@@ -175,14 +175,14 @@ class ScannerVC: UIViewController {
             headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            headerView.heightAnchor.constraint(equalToConstant: 50),
+            headerView.heightAnchor.constraint(equalToConstant: 40),
             
             headerLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor),
             headerLabel.trailingAnchor.constraint(equalTo: headerView.trailingAnchor),
             headerLabel.bottomAnchor.constraint(equalTo: headerView.bottomAnchor, constant: -8),
             
-            thumbOptionStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            thumbOptionStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            thumbOptionStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            thumbOptionStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
             thumbOptionStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
             thumbOptionStackView.heightAnchor.constraint(equalToConstant: 20),
             
