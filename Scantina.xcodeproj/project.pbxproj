@@ -12,6 +12,12 @@
 		4291081927016F6000491DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4291081827016F6000491DD5 /* Assets.xcassets */; };
 		4291081C27016F6000491DD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4291081A27016F6000491DD5 /* LaunchScreen.storyboard */; };
 		42910826270170DA00491DD5 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42910825270170DA00491DD5 /* ScannerVC.swift */; };
+		42D76947270A8F2D001E6ECE /* ThemeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D76946270A8F2D001E6ECE /* ThemeSettings.swift */; };
+		42D7694A270A9B60001E6ECE /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D76949270A9B60001E6ECE /* Extension+UIImage.swift */; };
+		42D7694C270A9B87001E6ECE /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7694B270A9B87001E6ECE /* Extension+UIViewController.swift */; };
+		42D7694E270A9DD3001E6ECE /* ScanAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7694D270A9DD3001E6ECE /* ScanAlertVC.swift */; };
+		42E4821F2709797A008DB38C /* CantinaScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E4821E2709797A008DB38C /* CantinaScanner.swift */; };
+		DFC3C3FAF26512BBB8C2EDD9 /* libPods-Scantina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E89AD7409C296DEF12597A /* libPods-Scantina.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,14 @@
 		4291081B27016F6000491DD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4291081D27016F6000491DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42910825270170DA00491DD5 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		42D76946270A8F2D001E6ECE /* ThemeSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSettings.swift; sourceTree = "<group>"; };
+		42D76949270A9B60001E6ECE /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
+		42D7694B270A9B87001E6ECE /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		42D7694D270A9DD3001E6ECE /* ScanAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanAlertVC.swift; sourceTree = "<group>"; };
+		42E4821E2709797A008DB38C /* CantinaScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CantinaScanner.swift; sourceTree = "<group>"; };
+		A4E89AD7409C296DEF12597A /* libPods-Scantina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Scantina.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BADA27D8FF69AC6CB1117E24 /* Pods-Scantina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scantina.release.xcconfig"; path = "Target Support Files/Pods-Scantina/Pods-Scantina.release.xcconfig"; sourceTree = "<group>"; };
+		DD4C60FE17F64A6EE0EC7545 /* Pods-Scantina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scantina.debug.xcconfig"; path = "Target Support Files/Pods-Scantina/Pods-Scantina.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFC3C3FAF26512BBB8C2EDD9 /* libPods-Scantina.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				4291080E27016F5E00491DD5 /* Scantina */,
 				4291080D27016F5E00491DD5 /* Products */,
+				8FD9C4561B74503ECE24F23B /* Pods */,
+				B62BC7D24FD86C628E49319E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +71,8 @@
 		4291080E27016F5E00491DD5 /* Scantina */ = {
 			isa = PBXGroup;
 			children = (
+				42D76948270A9B11001E6ECE /* Extensions */,
+				42E4821D27097963008DB38C /* Utilities */,
 				429108242701701D00491DD5 /* ViewControllers */,
 				429108232701700500491DD5 /* Support */,
 				4291081D27016F6000491DD5 /* Info.plist */,
@@ -76,8 +95,44 @@
 			isa = PBXGroup;
 			children = (
 				42910825270170DA00491DD5 /* ScannerVC.swift */,
+				42D7694D270A9DD3001E6ECE /* ScanAlertVC.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		42D76948270A9B11001E6ECE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				42D76949270A9B60001E6ECE /* Extension+UIImage.swift */,
+				42D7694B270A9B87001E6ECE /* Extension+UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		42E4821D27097963008DB38C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				42E4821E2709797A008DB38C /* CantinaScanner.swift */,
+				42D76946270A8F2D001E6ECE /* ThemeSettings.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8FD9C4561B74503ECE24F23B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD4C60FE17F64A6EE0EC7545 /* Pods-Scantina.debug.xcconfig */,
+				BADA27D8FF69AC6CB1117E24 /* Pods-Scantina.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B62BC7D24FD86C628E49319E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4E89AD7409C296DEF12597A /* libPods-Scantina.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +142,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4291082027016F6000491DD5 /* Build configuration list for PBXNativeTarget "Scantina" */;
 			buildPhases = (
+				2F059A091538899C5D8F20CE /* [CP] Check Pods Manifest.lock */,
 				4291080827016F5E00491DD5 /* Sources */,
 				4291080927016F5E00491DD5 /* Frameworks */,
 				4291080A27016F5E00491DD5 /* Resources */,
@@ -145,14 +201,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F059A091538899C5D8F20CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scantina-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4291080827016F5E00491DD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				42910826270170DA00491DD5 /* ScannerVC.swift in Sources */,
+				42D7694C270A9B87001E6ECE /* Extension+UIViewController.swift in Sources */,
+				42D7694E270A9DD3001E6ECE /* ScanAlertVC.swift in Sources */,
 				4291081027016F5E00491DD5 /* AppDelegate.swift in Sources */,
+				42D76947270A8F2D001E6ECE /* ThemeSettings.swift in Sources */,
+				42D7694A270A9B60001E6ECE /* Extension+UIImage.swift in Sources */,
 				4291081227016F5E00491DD5 /* SceneDelegate.swift in Sources */,
+				42E4821F2709797A008DB38C /* CantinaScanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +374,7 @@
 		};
 		4291082127016F6000491DD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD4C60FE17F64A6EE0EC7545 /* Pods-Scantina.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,8 +383,10 @@
 				DEVELOPMENT_TEAM = 86PU9U8BL6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Scantina/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app uses Camera for the ability to scan barcodes.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,6 +404,7 @@
 		};
 		4291082227016F6000491DD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BADA27D8FF69AC6CB1117E24 /* Pods-Scantina.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,8 +413,10 @@
 				DEVELOPMENT_TEAM = 86PU9U8BL6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Scantina/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app uses Camera for the ability to scan barcodes.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
