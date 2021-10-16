@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421F46A1270BF7B800170848 /* ScanTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421F46A0270BF7B800170848 /* ScanTabBarController.swift */; };
+		421F46A3270BF8F900170848 /* ScanSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421F46A2270BF8F900170848 /* ScanSettingsVC.swift */; };
+		421F46A5270C09B000170848 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421F46A4270C09B000170848 /* InfoVC.swift */; };
 		4291081027016F5E00491DD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4291080F27016F5E00491DD5 /* AppDelegate.swift */; };
 		4291081227016F5E00491DD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4291081127016F5E00491DD5 /* SceneDelegate.swift */; };
 		4291081927016F6000491DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4291081827016F6000491DD5 /* Assets.xcassets */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		421F46A0270BF7B800170848 /* ScanTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanTabBarController.swift; sourceTree = "<group>"; };
+		421F46A2270BF8F900170848 /* ScanSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanSettingsVC.swift; sourceTree = "<group>"; };
+		421F46A4270C09B000170848 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		4291080C27016F5E00491DD5 /* Scantina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scantina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4291080F27016F5E00491DD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4291081127016F5E00491DD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +108,8 @@
 			children = (
 				42910825270170DA00491DD5 /* ScannerVC.swift */,
 				42D7694D270A9DD3001E6ECE /* ScanAlertVC.swift */,
+				421F46A2270BF8F900170848 /* ScanSettingsVC.swift */,
+				421F46A4270C09B000170848 /* InfoVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -119,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				42D76950270AABE8001E6ECE /* ScantinaButton.swift */,
+				421F46A0270BF7B800170848 /* ScanTabBarController.swift */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -250,9 +259,12 @@
 				42D7694C270A9B87001E6ECE /* Extension+UIViewController.swift in Sources */,
 				42D76951270AABE8001E6ECE /* ScantinaButton.swift in Sources */,
 				42D7694E270A9DD3001E6ECE /* ScanAlertVC.swift in Sources */,
+				421F46A5270C09B000170848 /* InfoVC.swift in Sources */,
 				4291081027016F5E00491DD5 /* AppDelegate.swift in Sources */,
 				42D76947270A8F2D001E6ECE /* ThemeSettings.swift in Sources */,
+				421F46A1270BF7B800170848 /* ScanTabBarController.swift in Sources */,
 				42D7694A270A9B60001E6ECE /* Extension+UIImage.swift in Sources */,
+				421F46A3270BF8F900170848 /* ScanSettingsVC.swift in Sources */,
 				4291081227016F5E00491DD5 /* SceneDelegate.swift in Sources */,
 				42E4821F2709797A008DB38C /* CantinaScanner.swift in Sources */,
 			);

@@ -11,16 +11,16 @@
 
 
 ## Lessons Learned
-* I found the native iOS barcode scanning speed lacking for certain types of barcodes.
+* I found the native iOS barcode scanning speed lacking for certain types of barcodes. (Code-39 / 128)
 This project uses the GoogleMLKit MLKitBarcodeScanning to process scans and is much faster.
 
 
 ### Frameworks
-*UIKit
-*AVKit
-*AVFoundation
-*Contacts
-*QuartzCore
-*MessageUI
-*Firebase
-*GoogleMLKit
+* UIKit
+* AVKit
+* AVFoundation
+* Contacts
+* QuartzCore
+* MessageUI
+* Firebase
+* GoogleMLKit

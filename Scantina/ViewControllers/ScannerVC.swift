@@ -11,56 +11,12 @@ import MLKitBarcodeScanning
 import MLKitVision
 
 class ScannerVC: UIViewController {
-   
-    
-    /////////
-    /// spit balling ideas here as i go
-    /// sense what hand user holding device, put controls on that side for light/zoom
-    /// Add Tab Bar:
-    /// Middle - middle raised - Scan.
-    /// Right - types (select bard code types to recognize)
-    /// Settings?? (feedback, credits, contact, help, default zoom, check other app... reset to default settings, sound,
-    /// Search Amazon/Google/Etc for product UPCs?? Show in browser?
-    /// Parse contact /business card. Options to call/email/add to contacts/text, etc
-    /// Top bar to be beveled like... rounded down on edges Tab bar (bottom) beveled opposite way??
-    /// Localization ...
-    /// Custom Alerts ...
-    /// Catalog items/entries??
-    /// Option to capture scan and save to photos??
-    /// Share results?
-    /// Splash Screen / Icon
-    /// Color palette/Theme file
-    /// history of scans
-    /// saved scan results?
-    ///
-    /// when scan captured, based on results present options to user
-    ///     Show scan type, result text
-    ///     If text, like code - web search, share, copy, scan again
-    ///     upc?
-    ///
-    /////////
     
     //MARK: - Properties
     private var scanner: CantinaScanner?
     
     private let overlayImageHeight: CGFloat = 150
     private let overlayImageWidth:CGFloat = 300
-    
-    private let headerView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    
-    private let headerLabel: UILabel = {
-        let lbl = UILabel()
-        lbl.translatesAutoresizingMaskIntoConstraints = false
-        lbl.text = "Scantina"
-        lbl.font = .boldSystemFont(ofSize: 24)
-        lbl.textAlignment = .center
-        lbl.textColor = UIColor.secondaryColor
-        return lbl
-    }()
     
     private let cameraViewArea: UIView = {
         let view = UIView()
@@ -154,15 +110,11 @@ class ScannerVC: UIViewController {
     //MARK: - UI
     private func setupUI() {
         view.backgroundColor = UIColor.primaryColor
-        headerView.backgroundColor = UIColor.primaryColor
-        
-        headerView.addSubview(headerLabel)
         
         thumbOptionStackView.addArrangedSubview(zoomOutOverlay)
         thumbOptionStackView.addArrangedSubview(lightBulbOverlay)
         thumbOptionStackView.addArrangedSubview(zoomInOverlay)
         
-        view.addSubview(headerView)
         view.addSubview(cameraViewArea)
         view.addSubview(barcodeOverlay)
         view.addSubview(thumbOptionStackView)
@@ -172,21 +124,13 @@ class ScannerVC: UIViewController {
         lightBulbOverlay.addGestureRecognizer(tappedLight)
         
         NSLayoutConstraint.activate([
-            headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            headerView.heightAnchor.constraint(equalToConstant: 40),
-            
-            headerLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor),
-            headerLabel.trailingAnchor.constraint(equalTo: headerView.trailingAnchor),
-            headerLabel.bottomAnchor.constraint(equalTo: headerView.bottomAnchor, constant: -8),
             
             thumbOptionStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             thumbOptionStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
             thumbOptionStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
             thumbOptionStackView.heightAnchor.constraint(equalToConstant: 20),
             
-            cameraViewArea.topAnchor.constraint(equalTo: headerView.bottomAnchor),
+            cameraViewArea.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             cameraViewArea.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             cameraViewArea.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             cameraViewArea.bottomAnchor.constraint(equalTo: view.bottomAnchor),
