@@ -11,7 +11,7 @@ class ScanAlertVC: UIViewController {
     
     let containerView = UIView()
     
-    private let titleLabel: UILabel = {
+    private lazy var titleLabel: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.textAlignment = .center
@@ -21,7 +21,7 @@ class ScanAlertVC: UIViewController {
         return lbl
     }()
     
-    let messageLabel: UILabel = {
+    lazy var messageLabel: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.textAlignment = .center
@@ -31,7 +31,7 @@ class ScanAlertVC: UIViewController {
         return lbl
     }()
     
-    let actionButton: ScantinaButton = {
+    lazy var actionButton: ScantinaButton = {
         let btn = ScantinaButton(title: "Close")
         return btn
     }()

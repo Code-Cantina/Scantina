@@ -18,13 +18,13 @@ class ScannerVC: UIViewController {
     private let overlayImageHeight: CGFloat = 150
     private let overlayImageWidth:CGFloat = 300
     
-    private let cameraViewArea: UIView = {
+    private lazy var cameraViewArea: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
-    private let barcodeOverlay: UIImageView = {
+    private lazy var barcodeOverlay: UIImageView = {
         let iv = UIImageView(image: ThemeImages.scannerOverlay)
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.alpha = 0.3
@@ -32,7 +32,7 @@ class ScannerVC: UIViewController {
         return iv
     }()
     
-    private let thumbOptionStackView: UIStackView = {
+    private lazy var thumbOptionStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.alignment = .fill
@@ -42,21 +42,21 @@ class ScannerVC: UIViewController {
         return stackView
     }()
     
-    private let lightBulbOverlay: UIImageView = {
+    private lazy var lightBulbOverlay: UIImageView = {
         let iv = UIImageView(image: UIImage(systemName: "light.max")?.maskWithColor(color: UIColor.systemYellow))
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.contentMode = .scaleAspectFit
         return iv
     }()
     
-    private let zoomInOverlay: UIImageView = {
+    private lazy var zoomInOverlay: UIImageView = {
         let iv = UIImageView(image: UIImage(systemName: "plus.magnifyingglass")?.maskWithColor(color: UIColor.primaryColor!))
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.contentMode = .scaleAspectFit
         return iv
     }()
     
-    private let zoomOutOverlay: UIImageView = {
+    private lazy var zoomOutOverlay: UIImageView = {
         let iv = UIImageView(image: UIImage(systemName: "minus.magnifyingglass")?.maskWithColor(color: UIColor.primaryColor!))
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.contentMode = .scaleAspectFit
